@@ -1,0 +1,48 @@
+zheli@DESKTOP-2CO9IML MINGW64 ~/Desktop/New/NewGit (master)
+$ git log
+commit 4a26fdedfd7bee900272e865fd19b66042848b8d (HEAD -> master)
+Merge: 526bfc2 c80b341
+Author: OleksandrZhelihovskyi <zhelihovskii.aleksandr@gmail.com>
+Date:   Sat May 27 13:10:25 2023 +0300
+
+    Conflict resolved
+
+commit 526bfc2e6aa35211e9d19fe7895cd5dcb5800284
+Author: OleksandrZhelihovskyi <zhelihovskii.aleksandr@gmail.com>
+Date:   Sat May 27 13:07:56 2023 +0300
+
+    Master's commit
+
+commit c80b34129844b9a71a1dc85dde1cf0f479d2798a (newbranch)
+Author: OleksandrZhelihovskyi <zhelihovskii.aleksandr@gmail.com>
+Date:   Sat May 27 13:03:24 2023 +0300
+
+    And again
+
+commit cb8b590cbed73e9ac948378170425968b16211a8
+Author: OleksandrZhelihovskyi <zhelihovskii.aleksandr@gmail.com>
+Date:   Sat May 27 13:02:52 2023 +0300
+
+
+zheli@DESKTOP-2CO9IML MINGW64 ~/Desktop/New/NewGit (master)
+$ git status
+On branch master
+Your branch is based on 'origin/master', but the upstream is gone.
+  (use "git branch --unset-upstream" to fixup)
+
+nothing to commit, working tree clean
+
+zheli@DESKTOP-2CO9IML MINGW64 ~/Desktop/New/NewGit (master)
+$ git branch
+* master
+  newbranch
+
+zheli@DESKTOP-2CO9IML MINGW64 ~/Desktop/New/NewGit (master)
+$ git log --merges
+commit 4a26fdedfd7bee900272e865fd19b66042848b8d (HEAD -> master)
+Merge: 526bfc2 c80b341
+Author: OleksandrZhelihovskyi <zhelihovskii.aleksandr@gmail.com>
+Date:   Sat May 27 13:10:25 2023 +0300
+
+    Conflict resolved
+
